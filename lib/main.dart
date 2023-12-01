@@ -12,13 +12,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            "Hello Flutter",
+            style: TextStyle(fontSize: 28),
+          ),
+        ),
         body: Column(
           children: [
-            Text(
-              "Hello Flutter",
-              style: TextStyle(fontSize: 28),
-            ),
             TextField(
               decoration: InputDecoration(labelText: "이메일"),
             ),
