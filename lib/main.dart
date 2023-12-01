@@ -19,17 +19,20 @@ class MyApp extends StatelessWidget {
             style: TextStyle(fontSize: 28),
           ),
         ),
-        body: Column(
-          children: [
-            TextField(
-              decoration: InputDecoration(labelText: "이메일"),
-            ),
-            TextField(
-              obscureText: true,
-              decoration: InputDecoration(labelText: "비밀번호"),
-            ),
-            ElevatedButton(onPressed: () {}, child: Text('로그인'))
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              TextField(
+                decoration: InputDecoration(labelText: "이메일"),
+              ),
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(labelText: "비밀번호"),
+              ),
+              ElevatedButton(onPressed: () {}, child: Text('로그인'))
+            ],
+          ),
         ),
       ),
     );
