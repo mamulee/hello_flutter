@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
               obscureText: true,
               decoration: InputDecoration(labelText: "비밀번호"),
             ),
+            ElevatedButton(onPressed: () {}, child: Text('로그인'))
           ],
         ),
       ),
