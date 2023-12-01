@@ -30,7 +30,10 @@ class MyApp extends StatelessWidget {
                 obscureText: true,
                 decoration: InputDecoration(labelText: "비밀번호"),
               ),
-              ElevatedButton(onPressed: () {}, child: Text('로그인'))
+              Container(
+                  width: double.infinity,
+                  margin: EdgeInsets.only(top: 24),
+                  child: ElevatedButton(onPressed: () {}, child: Text('로그인')))
             ],
           ),
         ),
